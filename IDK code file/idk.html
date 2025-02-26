@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="idk2.css">
+</head>
+<body>
+    <h2>
+        =====================================
+    </h2>
+    <h1>
+        This is coded by me "Awali" :]
+    </h1>
+    <p>
+        Press the button below me!
+    </p>
+    <div id="customAlert" class="alert">
+        This is a custom alert!
+        <button type="button" onclick="closeAlert()">Click me!</button>
+    </div>
+    
+    <style>
+    .alert {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(255, 0, 0); /* Red background */
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+    </style>
+    
+    <script>
+    function showAlert() {
+        document.getElementById("customAlert").style.display = "block";
+    }
+    
+    function closeAlert() {
+        document.getElementById("customAlert").style.display = "none";
+    }
+    </script>
+    
+    <button onclick="showAlert()">Show Alert</button>
+    
+
+</body>
+</html>
