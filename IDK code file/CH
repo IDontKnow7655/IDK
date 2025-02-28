@@ -1,0 +1,15 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create docs directory
+        run: mkdir -p docs
+
+      - name: Run Jekyll Build
+        uses: ghcr.io/actions/jekyll-build-pages@v1.0.13
+        with:
+          source: .
+          destination: ./_site
