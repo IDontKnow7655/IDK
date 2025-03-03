@@ -1,43 +1,45 @@
-@keyframes colorchange {
-    0% {
-        background-color: #FF0000;
-    }
-    33.333% {
-        background-color: #0000FF;
-    }
-    66.666% {
-        background-color: #00FF00;
-    }
-    100% {
-        background-color: #FF0000;
-    }
+/* Alert Box Styling */
+.alert {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(5, 0, 0); /* Red background */
+    color: rgb(0, 0, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
 }
-body, h2 {
-    animation: colorchange 25s infinite;
+
+/* Keyframe Animation for Background */
+@keyframes colorchange {
+    0% { background-color: #FF0000; }
+    33% { background-color: #0000FF; }
+    66% { background-color: #00FF00; }
+    100% { background-color: #FF0000; }
+}
+
+/* Keyframe Animation for Text Color */
+@keyframes colors {
+    0% { color: #0000FF; }
+    20% { color: #00FFFF; }
+    40% { color: #00FF00; }
+    60% { color: #FFFF00; }
+    80% { color: #FF0000; }
+    100% { color: #0000FF; }
+}
+
+/* Style when .cool is applied */
+.cool {
+    animation: colorchange 5s infinite;
     text-align: center;
 }
-h1, p, button{
+
+/* Styling the button when "cool" is applied */
+.cool-button {
     background-color: black;
-    animation: colors 25s infinite;
+    animation: colors 5s infinite;
     box-shadow: #000000 0px 30px 100px;
 }
-@keyframes colors {
-    0% {
-        color: #0000FF;
-    }
-    20% {
-        color: #00FFFF;
-    }
-    40% {
-        color: #00FF00;
-    }
-    60% {
-        color: #FFFF00;
-    }
-    80% {
-        color: #FF0000;
-    }
-    100% {
-       color: #0000FF;
-    }
-}
+
