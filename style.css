@@ -1,0 +1,43 @@
+@keyframes colorchange {
+    0% {
+        background-color: #FF0000;
+    }
+    33.333% {
+        background-color: #0000FF;
+    }
+    66.666% {
+        background-color: #00FF00;
+    }
+    100% {
+        background-color: #FF0000;
+    }
+}
+body, h2 {
+    animation: colorchange 25s infinite;
+    text-align: center;
+}
+h1, p, button{
+    background-color: black;
+    animation: colors 25s infinite;
+    box-shadow: #000000 0px 30px 100px;
+}
+@keyframes colors {
+    0% {
+        color: #0000FF;
+    }
+    20% {
+        color: #00FFFF;
+    }
+    40% {
+        color: #00FF00;
+    }
+    60% {
+        color: #FFFF00;
+    }
+    80% {
+        color: #FF0000;
+    }
+    100% {
+       color: #0000FF;
+    }
+}
